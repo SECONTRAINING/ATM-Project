@@ -1,0 +1,68 @@
+D:\Sidhant\Training Project\BusinessLogicLayer\bin\Debug\net7.0\BusinessLogicLayer.deps.json
+D:\Sidhant\Training Project\BusinessLogicLayer\bin\Debug\net7.0\BusinessLogicLayer.dll
+D:\Sidhant\Training Project\BusinessLogicLayer\bin\Debug\net7.0\BusinessLogicLayer.pdb
+D:\Sidhant\Training Project\BusinessLogicLayer\obj\Debug\net7.0\BusinessLogicLayer.csproj.AssemblyReference.cache
+D:\Sidhant\Training Project\BusinessLogicLayer\obj\Debug\net7.0\BusinessLogicLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Sidhant\Training Project\BusinessLogicLayer\obj\Debug\net7.0\BusinessLogicLayer.AssemblyInfoInputs.cache
+D:\Sidhant\Training Project\BusinessLogicLayer\obj\Debug\net7.0\BusinessLogicLayer.AssemblyInfo.cs
+D:\Sidhant\Training Project\BusinessLogicLayer\obj\Debug\net7.0\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+D:\Sidhant\Training Project\BusinessLogicLayer\obj\Debug\net7.0\BusinessLogicLayer.dll
+D:\Sidhant\Training Project\BusinessLogicLayer\obj\Debug\net7.0\refint\BusinessLogicLayer.dll
+D:\Sidhant\Training Project\BusinessLogicLayer\obj\Debug\net7.0\BusinessLogicLayer.pdb
+D:\Sidhant\Training Project\BusinessLogicLayer\obj\Debug\net7.0\ref\BusinessLogicLayer.dll
+D:\Sidhant\Training Project\BusinessLogicLayer\bin\Debug\net7.0\DataObjectLayer.dll
+D:\Sidhant\Training Project\BusinessLogicLayer\bin\Debug\net7.0\DataObjectLayer.pdb
+D:\Sidhant\Training Project\BusinessLogicLayer\obj\Debug\net7.0\BusinessLogicLayer.csproj.CopyComplete
+D:\Sidhant\Training Project\BusinessLogicLayer\bin\Debug\net7.0\DataAccessLayer.dll
+D:\Sidhant\Training Project\BusinessLogicLayer\bin\Debug\net7.0\DataAccessLayer.pdb
+D:\Sidhant\Training Project\ATM Project\BusinessLogicLayer\bin\Debug\net7.0\BusinessLogicLayer.deps.json
+D:\Sidhant\Training Project\ATM Project\BusinessLogicLayer\bin\Debug\net7.0\BusinessLogicLayer.dll
+D:\Sidhant\Training Project\ATM Project\BusinessLogicLayer\bin\Debug\net7.0\BusinessLogicLayer.pdb
+D:\Sidhant\Training Project\ATM Project\BusinessLogicLayer\bin\Debug\net7.0\DataAccessLayer.dll
+D:\Sidhant\Training Project\ATM Project\BusinessLogicLayer\bin\Debug\net7.0\DataObjectLayer.dll
+D:\Sidhant\Training Project\ATM Project\BusinessLogicLayer\bin\Debug\net7.0\DataAccessLayer.pdb
+D:\Sidhant\Training Project\ATM Project\BusinessLogicLayer\bin\Debug\net7.0\DataObjectLayer.pdb
+D:\Sidhant\Training Project\ATM Project\BusinessLogicLayer\obj\Debug\net7.0\BusinessLogicLayer.csproj.AssemblyReference.cache
+D:\Sidhant\Training Project\ATM Project\BusinessLogicLayer\obj\Debug\net7.0\BusinessLogicLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Sidhant\Training Project\ATM Project\BusinessLogicLayer\obj\Debug\net7.0\BusinessLogicLayer.AssemblyInfoInputs.cache
+D:\Sidhant\Training Project\ATM Project\BusinessLogicLayer\obj\Debug\net7.0\BusinessLogicLayer.AssemblyInfo.cs
+D:\Sidhant\Training Project\ATM Project\BusinessLogicLayer\obj\Debug\net7.0\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+D:\Sidhant\Training Project\ATM Project\BusinessLogicLayer\obj\Debug\net7.0\BusinessLogicLayer.csproj.CopyComplete
+D:\Sidhant\Training Project\ATM Project\BusinessLogicLayer\obj\Debug\net7.0\BusinessLogicLayer.dll
+D:\Sidhant\Training Project\ATM Project\BusinessLogicLayer\obj\Debug\net7.0\refint\BusinessLogicLayer.dll
+D:\Sidhant\Training Project\ATM Project\BusinessLogicLayer\obj\Debug\net7.0\BusinessLogicLayer.pdb
+D:\Sidhant\Training Project\ATM Project\BusinessLogicLayer\obj\Debug\net7.0\ref\BusinessLogicLayer.dll
+D:\Training Project\ATM-Project\BusinessLogicLayer\bin\Debug\net7.0\BusinessLogicLayer.deps.json
+D:\Training Project\ATM-Project\BusinessLogicLayer\bin\Debug\net7.0\BusinessLogicLayer.dll
+D:\Training Project\ATM-Project\BusinessLogicLayer\bin\Debug\net7.0\BusinessLogicLayer.pdb
+D:\Training Project\ATM-Project\BusinessLogicLayer\bin\Debug\net7.0\DataAccessLayer.dll
+D:\Training Project\ATM-Project\BusinessLogicLayer\bin\Debug\net7.0\DataObjectLayer.dll
+D:\Training Project\ATM-Project\BusinessLogicLayer\bin\Debug\net7.0\DataAccessLayer.pdb
+D:\Training Project\ATM-Project\BusinessLogicLayer\bin\Debug\net7.0\DataObjectLayer.pdb
+D:\Training Project\ATM-Project\BusinessLogicLayer\obj\Debug\net7.0\BusinessLogicLayer.csproj.AssemblyReference.cache
+D:\Training Project\ATM-Project\BusinessLogicLayer\obj\Debug\net7.0\BusinessLogicLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Training Project\ATM-Project\BusinessLogicLayer\obj\Debug\net7.0\BusinessLogicLayer.AssemblyInfoInputs.cache
+D:\Training Project\ATM-Project\BusinessLogicLayer\obj\Debug\net7.0\BusinessLogicLayer.AssemblyInfo.cs
+D:\Training Project\ATM-Project\BusinessLogicLayer\obj\Debug\net7.0\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+D:\Training Project\ATM-Project\BusinessLogicLayer\obj\Debug\net7.0\BusinessLogicLayer.csproj.CopyComplete
+D:\Training Project\ATM-Project\BusinessLogicLayer\obj\Debug\net7.0\BusinessLogicLayer.dll
+D:\Training Project\ATM-Project\BusinessLogicLayer\obj\Debug\net7.0\refint\BusinessLogicLayer.dll
+D:\Training Project\ATM-Project\BusinessLogicLayer\obj\Debug\net7.0\BusinessLogicLayer.pdb
+D:\Training Project\ATM-Project\BusinessLogicLayer\obj\Debug\net7.0\ref\BusinessLogicLayer.dll
+\\sw030\SW030_Shared\ATM Project\BusinessLogicLayer\bin\Debug\net7.0\BusinessLogicLayer.deps.json
+\\sw030\SW030_Shared\ATM Project\BusinessLogicLayer\bin\Debug\net7.0\BusinessLogicLayer.dll
+\\sw030\SW030_Shared\ATM Project\BusinessLogicLayer\bin\Debug\net7.0\BusinessLogicLayer.pdb
+\\sw030\SW030_Shared\ATM Project\BusinessLogicLayer\bin\Debug\net7.0\DataAccessLayer.dll
+\\sw030\SW030_Shared\ATM Project\BusinessLogicLayer\bin\Debug\net7.0\DataObjectLayer.dll
+\\sw030\SW030_Shared\ATM Project\BusinessLogicLayer\bin\Debug\net7.0\DataAccessLayer.pdb
+\\sw030\SW030_Shared\ATM Project\BusinessLogicLayer\bin\Debug\net7.0\DataObjectLayer.pdb
+\\sw030\SW030_Shared\ATM Project\BusinessLogicLayer\obj\Debug\net7.0\BusinessLogicLayer.csproj.AssemblyReference.cache
+\\sw030\SW030_Shared\ATM Project\BusinessLogicLayer\obj\Debug\net7.0\BusinessLogicLayer.GeneratedMSBuildEditorConfig.editorconfig
+\\sw030\SW030_Shared\ATM Project\BusinessLogicLayer\obj\Debug\net7.0\BusinessLogicLayer.AssemblyInfoInputs.cache
+\\sw030\SW030_Shared\ATM Project\BusinessLogicLayer\obj\Debug\net7.0\BusinessLogicLayer.AssemblyInfo.cs
+\\sw030\SW030_Shared\ATM Project\BusinessLogicLayer\obj\Debug\net7.0\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+\\sw030\SW030_Shared\ATM Project\BusinessLogicLayer\obj\Debug\net7.0\BusinessLogicLayer.csproj.CopyComplete
+\\sw030\SW030_Shared\ATM Project\BusinessLogicLayer\obj\Debug\net7.0\BusinessLogicLayer.dll
+\\sw030\SW030_Shared\ATM Project\BusinessLogicLayer\obj\Debug\net7.0\refint\BusinessLogicLayer.dll
+\\sw030\SW030_Shared\ATM Project\BusinessLogicLayer\obj\Debug\net7.0\BusinessLogicLayer.pdb
+\\sw030\SW030_Shared\ATM Project\BusinessLogicLayer\obj\Debug\net7.0\ref\BusinessLogicLayer.dll

@@ -1,0 +1,11 @@
+D:\Sidhant\Training Project\ATM Project\DataObjectLayer\bin\Release\net7.0\DataObjectLayer.deps.json
+D:\Sidhant\Training Project\ATM Project\DataObjectLayer\bin\Release\net7.0\DataObjectLayer.dll
+D:\Sidhant\Training Project\ATM Project\DataObjectLayer\bin\Release\net7.0\DataObjectLayer.pdb
+D:\Sidhant\Training Project\ATM Project\DataObjectLayer\obj\Release\net7.0\DataObjectLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Sidhant\Training Project\ATM Project\DataObjectLayer\obj\Release\net7.0\DataObjectLayer.AssemblyInfoInputs.cache
+D:\Sidhant\Training Project\ATM Project\DataObjectLayer\obj\Release\net7.0\DataObjectLayer.AssemblyInfo.cs
+D:\Sidhant\Training Project\ATM Project\DataObjectLayer\obj\Release\net7.0\DataObjectLayer.csproj.CoreCompileInputs.cache
+D:\Sidhant\Training Project\ATM Project\DataObjectLayer\obj\Release\net7.0\DataObjectLayer.dll
+D:\Sidhant\Training Project\ATM Project\DataObjectLayer\obj\Release\net7.0\refint\DataObjectLayer.dll
+D:\Sidhant\Training Project\ATM Project\DataObjectLayer\obj\Release\net7.0\DataObjectLayer.pdb
+D:\Sidhant\Training Project\ATM Project\DataObjectLayer\obj\Release\net7.0\ref\DataObjectLayer.dll

@@ -1,0 +1,68 @@
+D:\Sidhant\Training Project\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.csproj.AssemblyReference.cache
+D:\Sidhant\Training Project\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Sidhant\Training Project\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.AssemblyInfoInputs.cache
+D:\Sidhant\Training Project\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.AssemblyInfo.cs
+D:\Sidhant\Training Project\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\Sidhant\Training Project\DataAccessLayer\bin\Debug\net7.0\DataAccessLayer.deps.json
+D:\Sidhant\Training Project\DataAccessLayer\bin\Debug\net7.0\DataAccessLayer.runtimeconfig.json
+D:\Sidhant\Training Project\DataAccessLayer\bin\Debug\net7.0\DataAccessLayer.dll
+D:\Sidhant\Training Project\DataAccessLayer\bin\Debug\net7.0\DataAccessLayer.pdb
+D:\Sidhant\Training Project\DataAccessLayer\bin\Debug\net7.0\DataObjectLayer.dll
+D:\Sidhant\Training Project\DataAccessLayer\bin\Debug\net7.0\DataObjectLayer.pdb
+D:\Sidhant\Training Project\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.csproj.CopyComplete
+D:\Sidhant\Training Project\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.dll
+D:\Sidhant\Training Project\DataAccessLayer\obj\Debug\net7.0\refint\DataAccessLayer.dll
+D:\Sidhant\Training Project\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.pdb
+D:\Sidhant\Training Project\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.genruntimeconfig.cache
+D:\Sidhant\Training Project\DataAccessLayer\obj\Debug\net7.0\ref\DataAccessLayer.dll
+D:\Sidhant\Training Project\ATM Project\DataAccessLayer\bin\Debug\net7.0\DataAccessLayer.deps.json
+D:\Sidhant\Training Project\ATM Project\DataAccessLayer\bin\Debug\net7.0\DataAccessLayer.runtimeconfig.json
+D:\Sidhant\Training Project\ATM Project\DataAccessLayer\bin\Debug\net7.0\DataAccessLayer.dll
+D:\Sidhant\Training Project\ATM Project\DataAccessLayer\bin\Debug\net7.0\DataAccessLayer.pdb
+D:\Sidhant\Training Project\ATM Project\DataAccessLayer\bin\Debug\net7.0\DataObjectLayer.dll
+D:\Sidhant\Training Project\ATM Project\DataAccessLayer\bin\Debug\net7.0\DataObjectLayer.pdb
+D:\Sidhant\Training Project\ATM Project\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.csproj.AssemblyReference.cache
+D:\Sidhant\Training Project\ATM Project\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Sidhant\Training Project\ATM Project\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.AssemblyInfoInputs.cache
+D:\Sidhant\Training Project\ATM Project\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.AssemblyInfo.cs
+D:\Sidhant\Training Project\ATM Project\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\Sidhant\Training Project\ATM Project\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.csproj.CopyComplete
+D:\Sidhant\Training Project\ATM Project\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.dll
+D:\Sidhant\Training Project\ATM Project\DataAccessLayer\obj\Debug\net7.0\refint\DataAccessLayer.dll
+D:\Sidhant\Training Project\ATM Project\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.pdb
+D:\Sidhant\Training Project\ATM Project\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.genruntimeconfig.cache
+D:\Sidhant\Training Project\ATM Project\DataAccessLayer\obj\Debug\net7.0\ref\DataAccessLayer.dll
+D:\Training Project\ATM-Project\DataAccessLayer\bin\Debug\net7.0\DataAccessLayer.deps.json
+D:\Training Project\ATM-Project\DataAccessLayer\bin\Debug\net7.0\DataAccessLayer.runtimeconfig.json
+D:\Training Project\ATM-Project\DataAccessLayer\bin\Debug\net7.0\DataAccessLayer.dll
+D:\Training Project\ATM-Project\DataAccessLayer\bin\Debug\net7.0\DataAccessLayer.pdb
+D:\Training Project\ATM-Project\DataAccessLayer\bin\Debug\net7.0\DataObjectLayer.dll
+D:\Training Project\ATM-Project\DataAccessLayer\bin\Debug\net7.0\DataObjectLayer.pdb
+D:\Training Project\ATM-Project\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.csproj.AssemblyReference.cache
+D:\Training Project\ATM-Project\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Training Project\ATM-Project\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.AssemblyInfoInputs.cache
+D:\Training Project\ATM-Project\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.AssemblyInfo.cs
+D:\Training Project\ATM-Project\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\Training Project\ATM-Project\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.csproj.CopyComplete
+D:\Training Project\ATM-Project\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.dll
+D:\Training Project\ATM-Project\DataAccessLayer\obj\Debug\net7.0\refint\DataAccessLayer.dll
+D:\Training Project\ATM-Project\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.pdb
+D:\Training Project\ATM-Project\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.genruntimeconfig.cache
+D:\Training Project\ATM-Project\DataAccessLayer\obj\Debug\net7.0\ref\DataAccessLayer.dll
+\\sw030\SW030_Shared\ATM Project\DataAccessLayer\bin\Debug\net7.0\DataAccessLayer.deps.json
+\\sw030\SW030_Shared\ATM Project\DataAccessLayer\bin\Debug\net7.0\DataAccessLayer.runtimeconfig.json
+\\sw030\SW030_Shared\ATM Project\DataAccessLayer\bin\Debug\net7.0\DataAccessLayer.dll
+\\sw030\SW030_Shared\ATM Project\DataAccessLayer\bin\Debug\net7.0\DataAccessLayer.pdb
+\\sw030\SW030_Shared\ATM Project\DataAccessLayer\bin\Debug\net7.0\DataObjectLayer.dll
+\\sw030\SW030_Shared\ATM Project\DataAccessLayer\bin\Debug\net7.0\DataObjectLayer.pdb
+\\sw030\SW030_Shared\ATM Project\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.csproj.AssemblyReference.cache
+\\sw030\SW030_Shared\ATM Project\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+\\sw030\SW030_Shared\ATM Project\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.AssemblyInfoInputs.cache
+\\sw030\SW030_Shared\ATM Project\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.AssemblyInfo.cs
+\\sw030\SW030_Shared\ATM Project\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+\\sw030\SW030_Shared\ATM Project\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.csproj.CopyComplete
+\\sw030\SW030_Shared\ATM Project\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.dll
+\\sw030\SW030_Shared\ATM Project\DataAccessLayer\obj\Debug\net7.0\refint\DataAccessLayer.dll
+\\sw030\SW030_Shared\ATM Project\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.pdb
+\\sw030\SW030_Shared\ATM Project\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.genruntimeconfig.cache
+\\sw030\SW030_Shared\ATM Project\DataAccessLayer\obj\Debug\net7.0\ref\DataAccessLayer.dll
