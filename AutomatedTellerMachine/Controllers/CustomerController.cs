@@ -13,7 +13,7 @@ namespace AutomatedTellerMachine.Controllers
         }
         public IActionResult Customers()
         {
-            return View(bLLForCustomerAccount.GetCustomerAccounts());
+            return View();
         }
     }
 }

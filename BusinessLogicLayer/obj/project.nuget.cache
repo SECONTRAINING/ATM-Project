@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "hUBODpe8VkQItHBuMW5yrTsNk94T/3r7Q3YXQTPYbnVHTZbauAI6y2OsPdvCiWzpOUvjE6J7udKOGyZYF6GJqw==",
+  "dgSpecHash": "IVb3sYPCztx8sUO1aI+uhS0ytMZVvaklaZYS2un8INW2iSerBSOFpOaBzb8xGyss1MLGKqbleXuCOnG2RFdcvQ==",
   "success": true,
   "projectFilePath": "D:\\SW030_Shared\\ATM Project\\BusinessLogicLayer\\BusinessLogicLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.1\\microsoft.data.sqlclient.5.1.1.nupkg.sha512",

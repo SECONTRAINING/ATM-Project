@@ -1,0 +1,332 @@
+﻿@using Microsoft.Extensions.Options;
+@using BusinessLogicLayer.Services;
+@inject IOptions<ApiSettings> ApiSettings
+@{
+    ViewData["Title"] = "AdminDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<ul class="breadcrumb text-primary">
+    <li class="breadcrumb-item"><a asp-area="" asp-controller="Login" asp-action="AdminDetails"><i class="fas fa-globe-asia"></i>Admin</a></li>
+</ul>
+
+<div class="card " id="AdminListCard">
+     <div id="show" class=" card-header collapse-sh bg-transparent" data-toggle="collapse"> 
+        <h5 class="mb-0 row">
+            <label class=" btn-collapse-link collapsed Header col-md-6" style="margin-top:0.5rem" aria-expanded="false" aria-controls="ListCollapse">
+                Admin List
+            </label>
+            <button class="btn btn-primary col-md-3 offset-md-3" style="margin-top:0.5rem;margin-bottom:0.5rem" type="button" onclick="AddAdmin()">Add Admin</button>
+        </h5>
+    </div>
+    <div id="ListCollapse">
+        <div class="card-body shadow-lg">
+            <div class="table-responsive">
+                <hr />
+                <table class="table table-hover table-bordered" id="tbladminList" style="width:100%">
+                    <thead class="bg-light text-center">
+                        <tr style="width: 100%">
+                            <th>Action</th>
+                            <th>Full Name</th>
+                            <th>UserName</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody id="TbodytblAdminList" class="text-center"></tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="AdminModal" title="Admin Details">
+
+    <div class="form-group">
+        <label for="UserName">FullName<span class="text-danger">*</span></label>
+        <input type="text" class="form-control" id="txtFullName" name="FullName" required maxlength="30" placeholder="Enter Full Name">
+    </div>
+
+    <div class="form-group">
+        <label for="UserName">User Name<span class="text-danger">*</span></label>
+        <input type="text" class="form-control" id="txtUserName" name="UserName" required maxlength="30" placeholder="Enter Username">
+    </div>
+    <div class="form-group">
+        <label for="Email">Email<span class="text-danger">*</span></label>
+        <input type="text" class="form-control" id="txtEmail" name="Email" required maxlength="30" placeholder="Enter Your Email">
+    </div>
+    <div class="form-group">
+        <label for="Password">Password<span class="text-danger">*</span></label>
+        <input type="password" class="form-control" id="txtPassword" name="Password" required maxlength="30" placeholder="Password">
+    </div>
+</div>
+<script>
+
+    let Id = 0
+    var apiBaseUrl = "@ApiSettings.Value.ApiBaseUrl";
+
+    // Set the options that I want
+    Toastroptions = toastr.options = {
+        "closeButton": false,
+        "debug": false,
+        "newestOnTop": false,
+        "progressBar": false,
+        "positionClass": "toast-top-right",
+        "preventDuplicates": false,
+        "onclick": null,
+        "showDuration": "300",
+        "hideDuration": "1000",
+        "timeOut": "5000",
+        "extendedTimeOut": "1000",
+        "showEasing": "swing",
+        "hideEasing": "linear",
+        "showMethod": "fadeIn",
+        "hideMethod": "fadeOut"
+    }
+    $(document).ready(function () {
+
+
+
+        AddAdmin = () => {
+            Id = 0;
+            Id = 0;
+            $(".savebtn").text('Save');
+            adminDialog.dialog('open');
+        }
+
+        BindAdmin = () => {
+            debugger
+            $.ajax({
+
+                type: "GET",
+                // url: apiBaseUrl+"/Account/GetCustomers",
+                url: apiBaseUrl + "Admin/GetLogins",
+                dataType: "json",
+                success: function (data) {
+                    debugger
+                    if (data == null) {
+                        toastr.warning("No Admin Details Available", 'Admin Details', Toastroptions);
+                    }
+                    else {
+
+
+                        if ($.fn.DataTable.isDataTable('#tbladminList')) {
+                            $('#tbladminList').DataTable().destroy();
+                            $('#tbladminList TbodytblAdminList').empty();
+                        }
+                        table = $('#tbladminList').DataTable({
+
+                            "lengthMenu": [[5, 10, 25, 50], [5, 10, 25, 50]],
+
+                            "pageLength": 5,
+                            language: {
+                                searchPlaceholder: "Search records",
+                            },
+                            "sPaginationType": "full",
+
+                            "searchHighlight": true,
+                            "language": {
+                                "paginate": {
+                                    "previous": '<i class="fa fa-backward PMS-Pagination" title="Previous"></i>',
+                                    "next": '<i class="fa fa fa-forward PMS-Pagination" title="Next"></i>',
+                                    "first": '<i class="fa fa-fast-backward PMS-Pagination" title="First"></i>',
+                                    "last": '<i class="fa fa-fast-forward PMS-Pagination" title="Last"></i>',
+                                }
+                            },
+                            data: data,
+                            columns: [
+                                {
+                                    'sortable': false,
+                                    'searchable': false,
+                                    'mRender': (data, type, row) => {
+                                        debugger
+                                        let option = '<span>';
+                                        option += '<a onclick="EditAdmin(' + row.userID + ')"  href="javascript:void(0)" id="lnkEditAdmin' + row.userID + '"  title="Edit Customer" class="mr-2 editbtn"  > <i class="fa fa-edit text-secondary editicon"></i></a> ';
+                                        option += '<a href="javascript:void(0)"  id="lnkDeleteAdmin' + row.userID + '"  title="Delete Test Category" onclick="DeleteAdmin(' + row.userID + ')" class="mr-2 deletebtn" > <i class="fas fa-trash text-secondary deleteicon"></i></a>';
+                                        option += '</span>';
+                                        return option;
+                                    }
+
+                                },
+
+                                { 'data': 'fullName' },
+                                { 'data': 'userName' },
+
+                                { 'data': 'email' },
+
+                            ],
+                            order: [[1, 'asc']],
+                            sort: true,
+                            "fnDrawCallback": function () {
+
+                            },
+                        });
+
+                    }
+                },
+                error: function (xhr) {
+
+                    toastr.error(xhr.statusText, 'Admin Details', Toastroptions);
+
+                }
+            });
+        }
+
+        BindAdmin();
+
+        SaveAdmin = () => {
+
+
+            if (Id == 0) {
+                var formData = {
+                    FullName: $("#txtFullName").val(),
+                    UserName: $("#txtUserName").val(),
+                    Email: $("#txtEmail").val(),
+                    Password: $("#txtPassword").val(),
+                };
+
+                // Send an AJAX POST request to your server to save the data
+                $.ajax({
+                    type: "POST",
+                    url: apiBaseUrl + "Admin/SaveLogin",
+                    data: formData,
+                    contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+                    dataType: "json",
+                    success: function (response) {
+                        if (response == 1) {
+                            toastr.success("Data Saved Sucessfully", 'Admin Details', Toastroptions);
+                            BindAdmin();
+                            adminDialog.dialog('close');
+                        }
+                    },
+                    error: function (error) {
+                        toastr.error(xhr.statusText, 'Admin Details', Toastroptions);
+                    }
+                });
+            }
+            else {
+                var formData = {
+                    UserID: Id,
+                    FullName: $("#txtFullName").val(),
+                    UserName: $("#txtUserName").val(),
+                    Email: $("#txtEmail").val(),
+                    Password: $("#txtPassword").val(),
+                };
+
+                $.ajax({
+                    type: "POST",
+                    url: apiBaseUrl + "Admin/UpdateLogin?LoginId=" + Id,
+                    data: formData,
+                    contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+                    dataType: "json",
+                    success: function (response) {
+                        debugger
+                        if (response == 1) {
+                        toastr.success("Data Updated Sucessfully", 'Admin Details', Toastroptions);
+                            BindAdmin();
+                            adminDialog.dialog('close');
+                        }
+                        
+                    },
+                    error: function (error) {
+                        toastr.error(xhr.statusText, 'Admin Details', Toastroptions);
+                    }
+                });
+            }
+        }
+        
+        EditAdmin = (userID) => {
+            Id = userID;
+            debugger
+            adminDialog.dialog('open');
+            $(".savebtn").text('Update');
+            $.ajax({
+                type: "GET",
+                url: apiBaseUrl + "Admin/GetLoginById",
+                data: { Id: parseInt(userID) },
+                Accept: "application / json",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (response) {
+                    debugger
+                    adminDialog.dialog('open');
+                    $("#txtFullName").val(response.fullName);
+                    $("#txtUserName").val(response.userName);
+                    $("#txtEmail").val(response.email);
+                    $("#txtPassword").val(response.password).prop('disabled', true);
+                },
+
+                error: function (xhr) {
+                     toastr.error(xhr.statusText, "Admin Details", Toastroptions);
+                }
+            });
+        }
+
+
+        DeleteAdmin = (userID) => {
+            bootbox.dialog({
+
+                message: "<p>" + "Do You Really Want to Delete?" + "</p>",
+                size: 'Large',
+                buttons: {
+                    ok: {
+                        label: "Yes",
+                        className: 'btn-primary',
+                        callback: function () {
+                            $.ajax({
+                                type: "DELETE",
+                                url: apiBaseUrl + "Admin/DeleteLogin?LoginId=" + userID,
+                                dataType: "json",
+                                success: function (response) {
+                                    debugger
+                                    result = response;
+                                    if (result.IsError || result == 0)
+                                        toastr.warning("Error Occured! Try Again", 'Admin Details', Toastroptions);
+                                    else {
+
+                                        toastr.success("Deletion Successful", 'Admin Details', Toastroptions);
+                                        Id = 0;
+                                        BindAdmin();
+                                    }
+                                   
+                                },
+                                error: function (xhr) {
+
+                                    toastr.error(xhr.statusText, 'Admin Details', Toastroptions);
+                                }
+                            });
+                        }
+                    },
+                    cancel: {
+                        label: "No",
+                        className: 'btn-danger',
+                        callback: function () {
+                            toastr.error("Cancelled", 'Admin Details', Toastroptions);
+                        }
+                    }
+                }
+            });
+        }
+
+        var adminDialog = $("#AdminModal").dialog({
+            autoOpen: false,
+            height: 600,
+            width: 650,
+            modal: true,
+            position: { my: "center center", at: "center center", of: window },
+            buttons: [
+                {
+                    text: "Save",
+                    "class": 'savebtn btn btn-primary',
+                    "title": "Save",
+                    click: SaveAdmin
+
+                },
+            ]
+        });
+    });
+
+</script>
+
+
+

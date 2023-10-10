@@ -21,12 +21,14 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddAutoMapper(typeof(MappingProfile));
 builder.Services.AddScoped<BLLForCustomerAccount>();
+builder.Services.AddScoped(typeof(BLLForAdmin));
 
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 builder.Services.AddScoped<Repository<CustomerAccount>>();
+builder.Services.AddScoped<Repository<LoginCredential>>();
 
 // Configuring the base api url
-builder.Services.Configure<ApiSettings>(configuration.GetSection("ApiBaseUrl"));
+builder.Services.Configure<ApiSettings>(configuration.GetSection("APIUrl"));
 
 builder.Services.AddDbContext<ATMDBContext>(options =>
 {

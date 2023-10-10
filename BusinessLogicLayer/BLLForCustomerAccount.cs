@@ -40,6 +40,25 @@ namespace BusinessLogicLayer
             }
         }
 
+        public CustomerAccountView GetCustomerAccountById(int CustomerAccountId)
+        {
+            try
+            {
+                // Retrieve the CustomerAccount by ID from the repository
+                var CustomerAccount = _repository.GetById(CustomerAccountId);
+
+                // Map the CustomerAccount entity to a CustomerAccountView object using AutoMapper
+                var CustomerAccountView = _mapper.Map<CustomerAccountView>(CustomerAccount);
+
+                return CustomerAccountView;
+            }
+
+            catch (Exception ex)
+            {
+                // Handle other exceptions
+                throw new Exception(ex.Message);
+            }
+        }
         public int SaveCustomerAccount(CustomerAccountView CustomerAccountView)
         {
             try
@@ -60,26 +79,6 @@ namespace BusinessLogicLayer
                 throw;
             }
             return 1;
-        }
-
-        public CustomerAccountView GetCustomerAccountById(int CustomerAccountId)
-        {
-            try
-            {
-                // Retrieve the CustomerAccount by ID from the repository
-                var CustomerAccount = _repository.GetById(CustomerAccountId);
-
-                // Map the CustomerAccount entity to a CustomerAccountView object using AutoMapper
-                var CustomerAccountView = _mapper.Map<CustomerAccountView>(CustomerAccount);
-
-                return CustomerAccountView;
-            }
-
-            catch (Exception ex)
-            {
-                // Handle other exceptions
-                throw new Exception(ex.Message);
-            }
         }
 
         public int UpdateCustomerAccount(int CustomerAccountId, CustomerAccountView CustomerAccountView)

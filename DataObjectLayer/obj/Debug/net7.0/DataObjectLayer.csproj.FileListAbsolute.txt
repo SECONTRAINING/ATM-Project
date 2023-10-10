@@ -31,14 +31,3 @@ D:\Training Project\ATM-Project\DataObjectLayer\obj\Debug\net7.0\DataObjectLayer
 D:\Training Project\ATM-Project\DataObjectLayer\obj\Debug\net7.0\refint\DataObjectLayer.dll
 D:\Training Project\ATM-Project\DataObjectLayer\obj\Debug\net7.0\DataObjectLayer.pdb
 D:\Training Project\ATM-Project\DataObjectLayer\obj\Debug\net7.0\ref\DataObjectLayer.dll
-\\sw030\SW030_Shared\ATM Project\DataObjectLayer\bin\Debug\net7.0\DataObjectLayer.deps.json
-\\sw030\SW030_Shared\ATM Project\DataObjectLayer\bin\Debug\net7.0\DataObjectLayer.dll
-\\sw030\SW030_Shared\ATM Project\DataObjectLayer\bin\Debug\net7.0\DataObjectLayer.pdb
-\\sw030\SW030_Shared\ATM Project\DataObjectLayer\obj\Debug\net7.0\DataObjectLayer.GeneratedMSBuildEditorConfig.editorconfig
-\\sw030\SW030_Shared\ATM Project\DataObjectLayer\obj\Debug\net7.0\DataObjectLayer.AssemblyInfoInputs.cache
-\\sw030\SW030_Shared\ATM Project\DataObjectLayer\obj\Debug\net7.0\DataObjectLayer.AssemblyInfo.cs
-\\sw030\SW030_Shared\ATM Project\DataObjectLayer\obj\Debug\net7.0\DataObjectLayer.csproj.CoreCompileInputs.cache
-\\sw030\SW030_Shared\ATM Project\DataObjectLayer\obj\Debug\net7.0\DataObjectLayer.dll
-\\sw030\SW030_Shared\ATM Project\DataObjectLayer\obj\Debug\net7.0\refint\DataObjectLayer.dll
-\\sw030\SW030_Shared\ATM Project\DataObjectLayer\obj\Debug\net7.0\DataObjectLayer.pdb
-\\sw030\SW030_Shared\ATM Project\DataObjectLayer\obj\Debug\net7.0\ref\DataObjectLayer.dll

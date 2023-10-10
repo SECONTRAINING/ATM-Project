@@ -177,6 +177,24 @@
 
     let Id = 0;
 
+    Toastroptions = toastr.options = {
+        "closeButton": false,
+        "debug": false,
+        "newestOnTop": false,
+        "progressBar": false,
+        "positionClass": "toast-top-right",
+        "preventDuplicates": false,
+        "onclick": null,
+        "showDuration": "300",
+        "hideDuration": "1000",
+        "timeOut": "5000",
+        "extendedTimeOut": "1000",
+        "showEasing": "swing",
+        "hideEasing": "linear",
+        "showMethod": "fadeIn",
+        "hideMethod": "fadeOut"
+    }
+
     var apiBaseUrl = "@ApiSettings.Value.ApiBaseUrl";
 
     $(document).ready(function () {
@@ -194,12 +212,12 @@
                
                 type: "GET",
                 // url: apiBaseUrl+"/Account/GetCustomers",
-                url: apiBaseUrl + "https://localhost:44354/api/Account/GetCustomers",
+                url: apiBaseUrl + "Account/GetCustomers",
                 dataType: "json",
                 success: function (data) {
                     debugger
                     if (data == null) {
-                        toastr.warning("No Test Category Data Available", 'Test Category Details', Toastroptions);
+                        toastr.warning("No Customer Data Available", 'Customer Details', Toastroptions);
                     }
                     else {
 
@@ -294,19 +312,21 @@
                 // Send an AJAX POST request to your server to save the data
                 $.ajax({
                     type: "POST",
-                    url: "https://localhost:44354/api/Account/UpdateCustomer",
+                    url: apiBaseUrl + "Account/UpdateCustomer",
                     // data: JSON.stringify(formData),
                     data: formData,
                     contentType: "application/x-www-form-urlencoded; charset=UTF-8",
                     // contentType: "application/json; charset=utf-8",
                     dataType: "json",
                     success: function (response) {
-                        alert("Data saved successfully!");
-                        BindCustomers();
-                        dialog.dialog('close');
+                        if (response == 1) {
+                            toastr.success("Data Saved Sucessfully", 'Customers Details', Toastroptions);
+                            BindCustomers();
+                            dialog.dialog('close');
+                        }
                     },
                     error: function (error) {
-                        alert("Error: " + error.responseText);
+                        toastr.error(xhr.statusText, "Customers Details", Toastroptions);
                     }
                 });
             }
@@ -335,7 +355,7 @@
 
                 $.ajax({
                     type: "POST",
-                    url: "https://localhost:44354/api/Account/UpdateCustomer?userId="+Id,
+                    url: apiBaseUrl + "Account/UpdateCustomer?userId=" + Id,
                     // data: JSON.stringify(formData),
                     data: formData,
                     contentType: "application/x-www-form-urlencoded; charset=UTF-8",
@@ -343,12 +363,14 @@
                     dataType: "json",
                     success: function (response) {
                         debugger
-                        alert("Data updated successfully!");
-                        BindCustomers();
-                        dialog.dialog('close');
+                        if (response == 1) {
+                            toastr.success("Data Updated Sucessfully", 'Customers Details', Toastroptions);
+                            BindCustomers();
+                            dialog.dialog('close');
+                        }
                     },
                     error: function (error) {
-                        alert("Error: " + error.responseText);
+                        toastr.error(xhr.statusText, "Customers Details", Toastroptions);
                     }
                 });
             }
@@ -361,7 +383,7 @@
             $(".savebtn").text('Update');
             $.ajax({
                 type: "GET",
-                url: "https://localhost:44354/api/Account/GetUserById",
+                url: apiBaseUrl+ "Account/GetUserById",
                 data: { userId: parseInt(customerId) },
                 Accept: "application / json",
                 contentType: "application/json; charset=utf-8",
@@ -393,29 +415,51 @@
                 },
                 
                 error: function (xhr) {
-                    // toastr.error(xhr.statusText, "Category Details", Toastroptions);
+                    toastr.error(xhr.statusText, "Customers Details", Toastroptions);
                 }
             });
         }
 
         DeleteCustomer = (customerId) => {
-            if (confirm("Are you sure you want to delete this customer?")) {
-                // Send an AJAX DELETE request to your server to delete the customer
-                $.ajax({
-                    type: "DELETE",
-                    url: "https://localhost:44354/api/Account/DeleteCustomerAccount?CustomerAccountId=" + customerId, // Replace with the correct delete endpoint
-                    dataType: "json",
-                    success: function (response) {
-                        // Handle success (e.g., refresh the customer list)
-                        alert("Customer deleted successfully!");
-                        // You may want to reload the customer list or update the UI here
+            bootbox.dialog({
+
+                message: "<p>" + "Do You Really Want to Delete?" + "</p>",
+                size: 'Large',
+                buttons: {
+                    ok: {
+                        label: "Yes",
+                        className: 'btn-primary',
+                        callback: function () {
+                            $.ajax({
+                                type: "DELETE",
+                                url: apiBaseUrl + "Account/DeleteCustomerAccount?CustomerAccountId=" + customerId, // Replace with the correct delete endpoint
+                                dataType: "json",
+                                success: function (response) {
+                                   
+                                    if (result.IsError || result == 0)
+                                        toastr.warning("Error Occured! Try Again", 'Customers Details', Toastroptions);
+                                    else {
+
+                                        toastr.success("Deletion Successful", 'Customers Details', Toastroptions);
+                                        Id = 0;
+                                        BindCustomers();
+                                    }
+                                },
+                                error: function (xhr) {
+                                    toastr.error("Cancelled", 'Customers Details', Toastroptions);
+                                }
+                            });
+                        }
                     },
-                    error: function (xhr) {
-                        // Handle error
-                        alert("Error: " + xhr.statusText);
+                    cancel: {
+                        label: "No",
+                        className: 'btn-danger',
+                        callback: function () {
+                            toastr.error("Cancelled", 'Customers Details', Toastroptions);
+                        }
                     }
-                });
-            }
+                }
+            });
         }
 
         var dialog = $("#CustomerModal").dialog({

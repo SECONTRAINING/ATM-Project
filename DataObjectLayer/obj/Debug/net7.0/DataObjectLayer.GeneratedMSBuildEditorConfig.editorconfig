@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DataObjectLayer
-build_property.ProjectDir = \\sw030\SW030_Shared\ATM Project\DataObjectLayer\
+build_property.ProjectDir = D:\SW030_Shared\ATM Project\DataObjectLayer\
