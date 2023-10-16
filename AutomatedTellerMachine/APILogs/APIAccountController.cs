@@ -1,6 +1,7 @@
 ﻿using BusinessLogicLayer;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json.Linq;
 
 namespace AutomatedTellerMachine.APILogs
 {
@@ -45,6 +46,26 @@ namespace AutomatedTellerMachine.APILogs
             }
             return irecsaved;
         }
+
+        //[HttpPost]
+        //[Route("api/Account/SaveUser")]
+        //public IActionResult SaveUser(JObject jObject)
+        //{
+        //    try
+        //    {
+        //        dynamic jsondata = jObject;
+        //        JObject cat = jsondata.CustomerAccount;
+        //        var userView = cat.ToObject<CustomerAccountView>();
+        //        int irecsaved = _bLLForCustomerAccount.SaveCustomerAccount(userView);
+        //        return Ok(irecsaved);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        // Log the exception or handle it as needed
+        //        return BadRequest(ex.Message);
+        //    }
+        //}
+
 
         [HttpGet]
         [Route("api/Account/GetUserById")]

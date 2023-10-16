@@ -80,6 +80,8 @@ namespace BusinessLogicLayer
                 // Hash the user's password using BCrypt
                 string hashedPassword = BCrypt.Net.BCrypt.HashPassword(loginCredential.Password);
 
+                Random randomAccountNo = new Random();
+
 
                 // Map the LoginCredentialView to a Login entity
                 var data = _mapper.Map<LoginCredential>(loginCredential);
@@ -116,8 +118,9 @@ namespace BusinessLogicLayer
                 }
 
                 // Map the updated data from LoginCredentialView to the existingLogin entity
+                existingLogin.UserID = LoginId;
                 _mapper.Map(loginCredential, existingLogin);
-
+                existingLogin.UserID = LoginId;
                 // Update the Login in the repository
                 _repository.Update(LoginId, existingLogin);
 

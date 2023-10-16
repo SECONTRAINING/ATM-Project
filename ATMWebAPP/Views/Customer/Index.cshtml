@@ -1,0 +1,132 @@
+﻿@model IEnumerable<ATMWebAPP.Models.CustomerAccount>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Customer</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FullName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FathersName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DOB)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Gender)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PermanentAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PresentAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PANNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MobileNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Landline)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AccountType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OpeningBalance)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AccNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CardNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PIN)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CheckBook)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BranchID)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FullName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FathersName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DOB)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gender)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PermanentAddress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PresentAddress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PANNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MobileNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Landline)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AccountType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OpeningBalance)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AccNo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CardNo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PIN)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CheckBook)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BranchID)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { Id=item.CustomerID }) |
+                    @Html.ActionLink("Details", "Details", new { Id=item.CustomerID }) |
+                    @Html.ActionLink("Delete", "Delete", new { Id=item.CustomerID })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

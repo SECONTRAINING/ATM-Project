@@ -94,8 +94,19 @@ namespace BusinessLogicLayer
                     throw new Exception($"CustomerAccount with ID {CustomerAccountId} not found.");
                 }
 
+                var newDependent = new CustomerAccountView
+                {
+                    // Set other properties
+                    
+                };
+
                 // Map the updated data from CustomerAccountView to the existingCustomerAccount entity
                 _mapper.Map(CustomerAccountView, existingCustomerAccount);
+
+                existingCustomerAccount.CustomerID = CustomerAccountId;
+
+                existingCustomerAccount.DOB = CustomerAccountView.DOB;
+                existingCustomerAccount.BranchID = CustomerAccountView.BranchID;
 
                 // Update the CustomerAccount in the repository
                 _repository.Update(CustomerAccountId, existingCustomerAccount);
